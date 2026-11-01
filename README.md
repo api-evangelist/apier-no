@@ -1,4 +1,4 @@
-# apier-no
+# Apier.no
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,175 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-apier-no is a company surfaced via the API Evangelist harvest backlog (source: mcp-registry) and added to the network as a stub for full-pipeline profiling.
-- https://apier.no/
+Apier.no provides machine‑verifiable Norwegian company authority data via an API. It offers status, roles, and coded signing authority directly from Brønnøysundregistrene, with source, history, and signed receipts. The service is self‑serve, with no sales call, and supports AI agents through MCP tools and OpenAPI specifications.
+
+**Areas:** Norwegian · CompanyData · API · MCP · Verification
+
+## Apier.no on APIs.io
+
+Everything profiled for Apier.no is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/apier-no/](https://apis.io/providers/apier-no/)** — or go straight to one of the APIs or properties below.
+
+### APIs (16)
+
+- [Apier.no Account API](https://apis.io/apis/apier-no/apier-no-account-api/) — Consumer self-serve account management — sign-up, magic-link request, key issuance. The /api/v1/account/signup endpoint is `security: []` on purpose: an…
+- [Apier.no Actions API](https://apis.io/apis/apier-no/apier-no-actions-api/) — Withdrawn (2026-10-21). The filing-action surface (`POST /api/v1/actions/execute` in dry-run and live mode, the pending-action approve / reject / status…
+- [Apier.no Admin API](https://apis.io/apis/apier-no/apier-no-admin-api/) — Administrative endpoints for managing consumers and API keys. Requires ADMIN_API_KEY.
+- [Apier.no Altinn API](https://apis.io/apis/apier-no/apier-no-altinn-api/) — Withdrawn (2026-10-21). The Altinn-sourced authorisation surface (acting-capacity resolution over Altinn roles and delegations) answers HTTP 410…
+- [Apier.no Auth Gateway API](https://apis.io/apis/apier-no/apier-no-auth-gateway-api/) — Withdrawn (2026-10-21). The delegation endpoints that used to arrange Maskinporten and Altinn access on the consumer's behalf answer HTTP 410…
+- [Apier.no Brreg API](https://apis.io/apis/apier-no/apier-no-brreg-api/) — Brønnøysund Enhetsregisteret context surface — agent-shaped company profile reads. NLOD-licensed public data; role codes only, never personal identifiers…
+- [Apier.no Changes API](https://apis.io/apis/apier-no/apier-no-changes-api/) — Cross-source change archive — detected archive events from Brreg, Altinn, DigDir, Norges Bank, NAV Aa-registeret, and Skatteetaten Tier 2 sub-results…
+- [Apier.no Company API](https://apis.io/apis/apier-no/apier-no-company-api/) — Reads over the Registry Engine's two-tier company model (Tier 1 public Brønnøysund data + Tier 2 gated commercial metrics).
+- [Apier.no Discovery API](https://apis.io/apis/apier-no/apier-no-discovery-api/) — Agent-first discovery manifest. `/v1/capabilities` is the machine-readable menu of every callable capability; `llms.txt` and `workflows.json` are the prose…
+- [Apier.no Fullmakt API](https://apis.io/apis/apier-no/apier-no-fullmakt-api/) — Withdrawn (2026-10-21). The fullmakt line (agent principals, brokered Altinn systembruker delegations, their receipts and revocation) answers HTTP 410…
+- [Apier.no Infrastructure API](https://apis.io/apis/apier-no/apier-no-infrastructure-api/) — Non-product endpoints (health checks, discovery).
+- [Apier.no Knowledge API](https://apis.io/apis/apier-no/apier-no-knowledge-api/) — The Knowledge Catalog — canonical, machine-readable topic records answering what an agent needs to KNOW about Norwegian company authority and…
+- [Apier.no Privacy API](https://apis.io/apis/apier-no/apier-no-privacy-api/) — Zero-auth GDPR transparency endpoints — Article 15 access requests via DSR. Rate-limited per IP (10/min, lower than Category A's 1000/min) so the surface…
+- [Apier.no Public API](https://apis.io/apis/apier-no/apier-no-public-api/) — Free, zero-auth endpoints. Rate-limited per-IP (soft cap 1000/min). Distribution infrastructure, not revenue — these exist so agents can discover the API…
+- [Apier.no Sandbox API](https://apis.io/apis/apier-no/apier-no-sandbox-api/) — Zero-auth, deterministic, CORS-open mirrors of every Category B company endpoint. Returns synthetic Norwegian company fixtures so agents can test…
+- [Apier.no Subscriptions API](https://apis.io/apis/apier-no/apier-no-subscriptions-api/) — Pro-tier change-detection webhook subscriptions. Consumers register a webhook URL + filter; Apier fires HMAC-SHA256-signed deliveries when matching…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Apier No Webhooks](https://apis.io/asyncapis/apier-no/apier-no-webhooks/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Apier No Agentic Access](https://apis.io/agentic-access/apier-no/apier-no-agentic-access/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [CompanyContext](https://apis.io/schemas/apier-no/apier-no-company-context/)
+- [CompanyVerification](https://apis.io/schemas/apier-no/apier-no-company-verification/)
+- [ErrorCode](https://apis.io/schemas/apier-no/apier-no-error-code/)
+- [SandboxMeta](https://apis.io/schemas/apier-no/apier-no-sandbox-meta/)
+- [SignedReceipt](https://apis.io/schemas/apier-no/apier-no-signed-receipt/)
+- [TrustMetadata](https://apis.io/schemas/apier-no/apier-no-trust-metadata/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Apier No Context](https://apis.io/jsonld/apier-no/apier-no-context/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Apier No Openapi Overlay](https://apis.io/overlays/apier-no/apier-no-openapi-overlay/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Apier.no API Rules](https://apis.io/rules/apier-no/apier-no-rules/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Apier No Authentication](https://apis.io/security/apier-no/apier-no-authentication/)
+- [Apier No Domain Security](https://apis.io/security/apier-no/apier-no-domain-security/)
+- [Apier No Trust Center](https://apis.io/security/apier-no/apier-no-trust-center/)
+- [Apier No Vulnerability Disclosure](https://apis.io/security/apier-no/apier-no-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Apier No Scopes](https://apis.io/scopes/apier-no/apier-no-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Apier No Plans Pricing](https://apis.io/plans/apier-no/apier-no-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Apier No Rate Limits](https://apis.io/rate-limits/apier-no/apier-no-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://apier.no/)
+- [Documentation](https://www.apier.no/docs)
+- [Getting started](https://www.apier.no/docs/quickstart)
+- [API reference](https://www.apier.no/openapi.json)
+- [Pricing](https://www.apier.no/pricing)
+- [Support](https://www.apier.no/support)
+- [Changelog](https://www.apier.no/docs/changelog)
+- [Blog](https://www.apier.no/blog)
+- [Security](https://www.apier.no/security)
+- [Compliance](https://www.apier.no/trust)
+- [Terms of service](https://www.apier.no/terms)
+- [Privacy policy](https://www.apier.no/privacy)
+- [Status](https://apier.betteruptime.com/)
+
+## API Evangelist rating
+
+**Kin Score 77.2** — exemplar · rubric 0.26.0 · scored 2026-11-01
+
+| Facet | Score |
+|---|---|
+| Discoverability | 65.0 |
+| Contract quality | 70.9 |
+| Contract governance | 79.1 |
+| Operational transparency | 83.7 |
+| Developer ergonomics | 61.2 |
+| Access clarity | 79.5 |
+
+**Agent readiness 74.3** — agent-native
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | verified |
+| Error Semantics | verified |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | verified |
+| Event Surface Described | unknown |
+| Agent Skills | unknown |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | yes |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | — |
+| Operation Distinctiveness | distinct |
+| MCP Tool Quality | na |
+
+**Regulatory alignment 45.1** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/apier-no/](https://apis.io/providers/apier-no/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Apier.no: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/apier-no/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
